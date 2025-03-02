@@ -1,0 +1,2 @@
+Written number is 46
+Thanks for usinf fprintf
