@@ -1,0 +1,144 @@
+Q1. What is make and Makefile?
+
+- make: A build automation tool that automatically determines which pieces of a program need to be recompiled and issues the commands to recompile them. It's commonly used in C/C++ projects.
+
+- Makefile: A file containing rules that "make" uses to build and manage dependencies in a project. It outlines the relationships between files and specifies how to compile the code.
+
+Example:	target: dependencies
+    			command
+
+
+Q2. What are Target, Dependencies, and Commands in Makefile?
+
+- Target: The file to be created or the action to be performed.
+
+- Dependencies: Files that must be present or up-to-date before the target can be built.
+
+- Commands: Actions to be executed if the dependencies are newer than the target.
+
+Example:	program: file1.o file2.o
+    			gcc -o program file1.o file2.o
+Here:
+- "program" is the target.
+- "file1.o", "file2.o" are dependencies.
+- "gcc -o program file1.o file2.o" is the command.
+
+
+Q4. What are Auto-Variables? How Are They Useful?
+
+Auto-variables are special variables that represent specific parts of a rule. They are automatically set by "make". Auto-variables reduce duplication and improve flexibility.
+
+Examples:
+- $@: Represents the target.
+- $^: Represents all dependencies.
+- $<: Represents the first dependency.
+- $?: Represents dependencies that are newer than the target.
+
+
+Q5. Write a Makefile Illustrating the Example of Auto-Variables.
+
+main.out: add.o sub.o mul.o div.o main.o
+	gcc $^ -o $@
+
+add.o: add.c
+	gcc -c $^ -o $@
+
+sub.o: sub.c
+	gcc -c $^ -o $@
+
+mul.o: mul.c
+	gcc -c $^ -o $@
+
+div.o: div.c
+	gcc -c $^ -o $@
+
+main.o: main.c
+	gcc -c $^ -o $@
+
+rm:
+	rm *.o
+
+Here:
+- `$@` represnts target file
+- `$^` represents all dependencies for corresponding taget file
+
+
+Q6. How to Execute a Makefile from Another Makefile? Write a Makefile Command
+You can use the `$(MAKE)` variable to invoke another makefile.
+
+Example:
+
+all:
+    $(MAKE) -f another_makefile
+
+
+Q7. What is a Phony Target in Makefile?
+
+A phony target does not represent a real file, thus don't have any dependencies and is used for executing commands. Declared using `.PHONY`.
+
+Example:
+
+.PHONY: rm
+ rm:
+      rm *.o
+
+
+Q8. Difference Between make and Makefile
+
+- make is an automation program that uses GCC/G++, to automake the compilation process. make utility automatically determines which pieces of large program needs to be recompiled.
+
+- makefile is a special text file, which holds the shell commands or set of rules, instructing make how to build the application. makefile must  have following specific lable : makefile, Makefile or GNUmakefile
+
+
+
+
+### 10. **Write a Makefile Illustrating the Example of Wildcard**
+Use `wildcard` to dynamically include files.
+```makefile
+SRC := $(wildcard *.c)
+OBJ := $(SRC:.c=.o)
+
+program: $(OBJ)
+    gcc -o $@ $^
+
+%.o: %.c
+    gcc -c $< -o $@
+```
+
+---
+
+11. What Does It Mean by the Following?
+
+- make clean: Removes temporary or object files.
+- make distclean: Cleans everything, including configuration files.
+- make install: Installs the program in the system.
+- make all: Builds all targets defined in the makefile.
+
+
+12. What Are Macros in Makefile? Write Some Examples
+
+Macros are variables in a makefile to store text, simplifying repetitive tasks.
+
+
+
+13. Explain Use of `include` and `override` in Makefile
+
+- include: Includes another file in the makefile. For ex (in makefile)
+    
+    include common.mk
+    
+- override: Forces a variable definition to override previous definitions. For ex (in makefile)
+
+    override CFLAGS += -O2
+
+
+14. What is the Benefit of Makefile?
+- Streamlines building and compiling processes.
+- Tracks dependencies automatically.
+- Flexible and customizable.
+
+
+```
+
+---
+

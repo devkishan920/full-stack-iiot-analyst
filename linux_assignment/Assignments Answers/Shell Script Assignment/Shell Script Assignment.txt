@@ -1,0 +1,35 @@
+		      Shell Script Assignment 
+                   ------------------------------
+
+Questions:
+
+1. Write a script to check entered character is vowel or consonant.
+2. Write a script to check entered number is even or odd.
+3. Write a script check if a file is exist or not in the directory.
+4. Write a script to check entered password is correct or not.
+5. Write a script to create calculator(/,*,-,+)
+6. Write a script to check entered number is palindrome
+   number or not.
+7. Write a script to check entered number is armstrong number
+   or not.
+8. Write a script to find number of armstrong number in given
+   range like 1 to 10000.
+9. Write a script to find number of palindrome number in given
+   range like 1 to 10000.
+10. Write a script to demonstrate infinite loop using for loop
+    using shell standard.
+11. write a program for armstrong using function
+12. write a program for palindrome using function.
+13. write a program for swaaping two values using function.
+
+14. pattern based programs
+	1.right angle
+	2.pyramid
+	3.Diamond
+
+15. arrange the elements in Ascending order
+16. arrange the elements in Descending order
+17. add element at specific place in array
+18. Find Lowest element in array
+19. Find greatest element in array
+

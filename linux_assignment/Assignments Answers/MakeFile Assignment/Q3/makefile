@@ -1,0 +1,22 @@
+# 3. write a makefile for generating binary which have main.c add.c sub.c mul.c div.c files.
+
+main.out: add.o sub.o mul.o div.o main.o
+	gcc add.o sub.o mul.o div.o main.o -o main.out
+
+add.o: add.c
+	gcc -c add.c -o add.o
+
+sub.o: sub.c
+	gcc -c sub.c -o sub.o
+
+mul.o: mul.c
+	gcc -c mul.c -o mul.o
+
+div.o: div.c
+	gcc -c div.c -o div.o
+
+main.o: main.c
+	gcc -c main.c -o main.o
+
+rm:
+	rm *.o

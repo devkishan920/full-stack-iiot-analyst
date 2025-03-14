@@ -1,0 +1,3 @@
+(.h) file ONLY holds the function name, i.e.,Declartion or Function prototype only.
+
+And, (.c) file holds the function defination.

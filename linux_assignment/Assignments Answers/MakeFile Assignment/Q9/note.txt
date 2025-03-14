@@ -1,0 +1,14 @@
+Makefile is generally used for building and managing dependencies file or projects, not for directly executing shell scripts or creating systems like password authentication. However, you can use a Makefile to invoke a shell script that performs such tasks.
+ 
+ #!/bin/bash
+  
+ echo -n "Enter the password: "
+ read -s pass
+ echo
+  
+ if [ "$pass" == "1234" ]; then
+    echo "Access Granted"
+ else
+    echo "Access Denied"
+ fi
+

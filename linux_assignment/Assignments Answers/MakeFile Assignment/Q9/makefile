@@ -1,0 +1,3 @@
+password:
+	bash password.sh
+

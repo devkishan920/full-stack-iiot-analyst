@@ -1,0 +1,52 @@
+		       Process management 
+                 ------------------------------
+
+1.What is process ?
+2.What Is a Daemon? list out some name of deamons .
+3.What Are The Process States In Unix?
+4.What Happens When You Execute A Program?
+5.What Happens When You Execute A Command?
+7.What Is A Zombie and orphan process ?
+8.What Is An Advantage Of Executing A Process In Background?
+9.What Is "ps" Command For?
+10.How Would You Kill A Process?
+11.What is a context switch?what all happens during context switch?when do u need it.
+12.Pid of init process ?
+13.which functions are used to get parent process identification number and process identification number.
+14.Parent process id of a deamon process ?
+15.How Do You Execute One Program From Within Another?
+16.How Can A Parent And Child Process Communicate?
+17.Brief About The Initial Process Sequence While The System Boots Up.?
+18.Explain Fork(),Exec,Clone System Call.how they relate to process .?
+19.List The System Calls Used For Process Management:
+20.How Will You Run A Process In Background? How Will You Bring That Into Foreground And How Will You Kill That Process?
+21.How Do You Find Which Process Is Taking How Much Cpu?
+22.How will you distinguish if it is a process or a thread ?
+
+22. Which is the first task what is spawned in linux kernel?
+What are the processes with PID 0 and PID 1?
+23.How to extract task_struct of a particular process if the stack pointer is given?
+24.What is process kernel stack and process user stack? What is the size of each and how are they allocated?
+25.Why do we need seperate kernel stack for each process?
+26.What is thread_info? Why is it stored at the end of kernel stack?
+27.What is the use of preempt_count variable?
+28.What is the difference between interruptible and uninterruptible task states?
+29.How processes and threads are created? (from user level till kernel level)
+30.How to proceed if system is sluggish
+31.How system call causes change from user to kernel space
+32.How to determine if some high prio task is hogging CPU
+Priority inversion, priority inheritance, priority ceiling?
+How priority inheritance will work ?
+33.What is Process preemption
+34.what is priority inversion & priority inheritance
+35.Explain about process address space with data seg,code seg..
+36.how much memory is occupied by process address spcae.
+37.When a same executable is excuted in two terminals like terminal 1 execute ./a.out and terminal 2 executed ./a.out what will the programe address space look like on RAM
+If a global variable defined as int V1=100 in programm_1 and modified this V1=200 in programme_2. what will be printed in Programme_1 and Programme_2.
+
+38.what is diff b/w process and threads?
+39.Will threads have their own stack space?
+40.can one thread access the address space of another thread?
+41.What is task_struct and how are task states maintained ?
+
+
