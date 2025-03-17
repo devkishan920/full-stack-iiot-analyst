@@ -1,4 +1,0 @@
-../Core/Src/main.c:4:6:main	2
-../Core/Src/main.c:17:7:keypad_init	1
-../Core/Src/main.c:25:7:keypad_kbhit	2
-../Core/Src/main.c:36:32:delay	2

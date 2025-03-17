@@ -1,4 +1,0 @@
-../Core/Src/main.c:4:6:main	8	static
-../Core/Src/main.c:17:7:keypad_init	4	static
-../Core/Src/main.c:25:7:keypad_kbhit	16	static
-../Core/Src/main.c:36:32:delay	16	static
