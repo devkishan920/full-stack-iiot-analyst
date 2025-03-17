@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="HAL_TIM_SET_CAPTUREPOLARITY"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="HAL_TIM_SET_CAPTUREPOLARITY"/>
+			<item value="HAL_TIM_IC_CaptureCallback"/>
+			<item value="TIM_IC"/>
+			<item value="IC"/>
+			<item value="TIM"/>
+			<item value="callback"/>
+			<item value="elapsed"/>
+			<item value="HAL_TIM_Base_Start"/>
+			<item value="Clt"/>
+			<item value="Cpt"/>
+			<item value="CltCpt"/>
+			<item value="ADC"/>
+			<item value="pwm"/>
+			<item value="call"/>
+			<item value="USER CODE 2"/>
+		</list>
+		<list key="replacehistory">
+			<item value="500"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="980"/>
+		<item key="DIALOG_Y_ORIGIN" value="278"/>
+		<item key="DIALOG_WIDTH" value="409"/>
+		<item key="DIALOG_HEIGHT" value="428"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|11.25|0|WINDOWS|1|-30|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="406"/>
+		<item key="DIALOG_Y_ORIGIN" value="271"/>
+	</section>
+</section>

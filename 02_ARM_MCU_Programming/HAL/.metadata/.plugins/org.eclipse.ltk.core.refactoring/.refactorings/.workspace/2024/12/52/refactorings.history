@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;GPIO_7Seg_KeyPad - Q6&apos;" deleteContents="true" description="Delete resource &apos;GPIO_7Seg_KeyPad - Q6&apos;" element1="/GPIO_7Seg_KeyPad - Q6" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1734879305088"/>&#x0A;<refactoring comment="Delete resource &apos;07_Interrupt&apos;" deleteContents="true" description="Delete resource &apos;07_Interrupt&apos;" element1="/07_Interrupt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1734940514211"/>
+</session>

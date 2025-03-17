@@ -1,0 +1,10 @@
+14:58:52 **** Incremental Build of configuration Debug for project GPIO - Q11 ****
+make -j16 all 
+arm-none-eabi-size  GPIO\ -\ Q11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13436	    104	   1976	  15516	   3c9c	GPIO - Q11.elf
+Finished building: default.size.stdout
+ 
+
+14:58:53 Build Finished. 0 errors, 0 warnings. (took 192ms)
+

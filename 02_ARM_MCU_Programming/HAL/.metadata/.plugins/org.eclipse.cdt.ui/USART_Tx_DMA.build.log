@@ -1,0 +1,14 @@
+15:59:21 **** Incremental Build of configuration Debug for project USART_Tx_DMA ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "USART_Tx_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Dev Kishan Prajapat\STM32CubeIDE\workspace_1.16.1\HAL\USART_Tx_DMA\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_Tx_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/stm32f4xx_hal_msp.o: in function `HAL_UART_MspInit':
+C:/Users/Dev Kishan Prajapat/STM32CubeIDE/workspace_1.16.1/HAL/USART_Tx_DMA/Debug/../Core/Src/stm32f4xx_hal_msp.c:141: undefined reference to `hdma_usart2_tx'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/stm32f4xx_it.o: in function `DMA1_Stream6_IRQHandler':
+C:/Users/Dev Kishan Prajapat/STM32CubeIDE/workspace_1.16.1/HAL/USART_Tx_DMA/Debug/../Core/Src/stm32f4xx_it.c:214: undefined reference to `hdma_usart2_tx'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: USART_Tx_DMA.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+15:59:21 Build Failed. 3 errors, 0 warnings. (took 498ms)
+
