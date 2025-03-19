@@ -17,12 +17,13 @@ int main()
    return 0;
 }
 
-int sum (int a, int b) //---------| 
-{                      //         |
-   return a+b;         //         |
-   a = 45675;          //         |----->>> This is a good conceptualthing LOOK IT !!! USE IT !!!
-   b = 34906869;       //         |
-   // return a+b;       //---------|
+int sum (int a, int b)
+{                              
+   return a+b;                 
+   a = 45675;  
+                   
+   // b = 34906869;               
+   // return a+b;    
 }
 
 

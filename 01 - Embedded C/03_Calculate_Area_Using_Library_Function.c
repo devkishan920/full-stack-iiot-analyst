@@ -5,7 +5,7 @@
 #include<math.h>
 
 
-int main()     // Either use void main()  OR int main()
+int main()    
 {
     int side;
     
@@ -14,5 +14,5 @@ int main()     // Either use void main()  OR int main()
 
     printf("Area of square is %f", pow(side,2));
     
-    return 0;  // if using void main() then no need to use [return 0] else need to use [return 0] 
+    return 0;  
 }

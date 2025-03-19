@@ -12,10 +12,9 @@ int main()
 
     printf("The value of x and y before swap is %d and %d\n",x,y);
 
-    // wrong_swap(x,y); // This function does not works, as it is Call by Value and hence only a copy is being used in the function not the orginal ones.
+    // wrong_swap(x,y);
 
-    swap(&x,&y); // This function works as it is Call by Refernce and since address of original value is being used in the function and hence the orginal values can also be manipulated.
-
+    swap(&x,&y); // This function works as it is Call by Refernce 
     printf("The value of x and y after swap is %d and %d\n",x,y);
 
     return 0;

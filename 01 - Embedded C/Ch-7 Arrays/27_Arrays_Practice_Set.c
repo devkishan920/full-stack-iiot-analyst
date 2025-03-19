@@ -242,7 +242,7 @@
     
 // }
 
-// Q-8 Make above code for custom inputs.
+
 
 // Q-9
 

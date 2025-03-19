@@ -4,7 +4,7 @@
 
 // int main()
 // {
-//     char *str = "Don't make me to become BAD";
+//     char *str = "Hello world";
 //     int a = strlen(str); // Counts the no. of character in String, EXCLUDING the Null Character
 //     printf("Length of string is %d",a);
 //     return 0;

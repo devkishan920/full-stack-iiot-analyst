@@ -17,7 +17,7 @@ int main()
     printf("\n");
 
     printf("Address of i is %u\n",&i);
-    // printf("Address of i is %d\n",j); // bhai jab bhi address print karna ho, bhale hi kisi bhi (int) datatype variable mein store ho (%u) Format specifier is used
+    // printf("Address of i is %d\n",j); // error
     printf("Address of i is %u\n",j);
     printf("Address of i is %u\n",*(&j));
 

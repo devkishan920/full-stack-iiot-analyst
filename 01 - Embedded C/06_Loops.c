@@ -52,11 +52,7 @@ void main()
 
 }
 
-// Compound Assignment Operator
-// a+=10 --> a = a+10;
-// a-=10 --> a = a-10;
-// a*=10 --> a = a*10;
-// a/=10 --> a = a/10;
+
 
 // DO WHILE LOOP
 // This loop first executes the code, irrespective of condition and then CHECK the CONDITION, i.e this loop is executed atleast ONCE
@@ -111,8 +107,7 @@ void main()
 
     //  initialize ; condition ; inc/dec
     for (i=n;i;i--) // here the at condition block only (i) is written. And the here i want to stop loop when condition becomes false.
-                    // And any false is repersented as 0.    
-                    // Any non-zero number is TRUE.
+        
     {
         printf("%d\n",i);
     }
@@ -140,7 +135,7 @@ int main()
     return 0;
 }
 
-// CONTINUE STATMENT    <--- Need More Practice
+// CONTINUE STATMENT   
 // This ignores what is written below (continue) makes the loop to restart.
 // ,i.e, skips the particular iteration of the loop
 

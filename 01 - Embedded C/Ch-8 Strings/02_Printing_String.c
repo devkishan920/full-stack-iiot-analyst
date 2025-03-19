@@ -4,8 +4,8 @@
 // int main()
 // {
 //     // Ways of Initialising the String
-//     char S[] = {'D','E','V','I','L','\0'};
-//     char R[] = "Devil"; // In this case Null character is automatically added 
+//     char S[] = {'H','E','L', 'L', 'o', '\0'};
+//     char R[] = "Hello"; // In this case Null character is automatically added 
 
 //     char *ptr1 = S; // ptr1 points to FIRST character element of string
     
@@ -35,14 +35,14 @@
 #include<stdio.h>
 int main()
 {
-    char *string = "Welcome to C World"; // Here the compiler automatically converts the shown string into something like - {'D','E','V','I','L','\0'}, i.e, into single characters along with Null character.
+    char *string = "Welcome to C World"; // Here the compiler automatically converts the shown string into something like - {'H','E','L', 'L', 'o', '\0'}, i.e, into single characters along with Null character.
     printf("%s\n",string);
 
-    char s[] = "My name is Dev.";
+    char s[] = "My name is usr.";
     string = s;
     printf("%s\n",string);
 
-    char r[] = "Living.";
+    char r[] = "Windows";
     printf("%s",r);
 
     return 0;

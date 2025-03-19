@@ -103,7 +103,7 @@
 //     *a = (*a) * 10;
 // }
 
-// Q-4 NICE, BEST, Power of Pointers
+// Q-4 
 
 #include<stdio.h>
 #include<conio.h>
@@ -127,10 +127,8 @@ int main()
 }
 
 void SumandAvg(int a , int b , int *sum , float *avg)   
-// here we have a problem that with a function we can return only one thing either the sum or average
-// So to return both sum and avg we peform as shown,
 {
-    // here we are decoding,i.e, getting values from function 
+    // getting values from function 
     *sum = a+b;
     *avg = (float)(*sum)/2;
 }
@@ -149,7 +147,7 @@ void SumandAvg(int a , int b , int *sum , float *avg)
 //  printf("Enter the value of i : ");
 //  scanf("%d",&i);
 
-//  printf("The value of i %d",*(*b)); // we can say jitni decoding utne stars
+//  printf("The value of i %d",*(*b)); 
   
 //  return 0;
 // }

@@ -1,12 +1,10 @@
 // Function defined in C, calling itself is known as Recursion.
 
-// Recursion : Function ke andar wahi function.
-
 // Fatorial using Recursion
 
 #include<stdio.h>
 
-int factorial(int x);    // Creating Factorial function with parameter (x)
+int factorial(int x);   
 
 int main()
 {
@@ -14,11 +12,11 @@ int main()
   printf("Enter the number whose factorial you want : ");
   scanf("%d",&a);
 
-  printf("Factorial of %d is %d",a,factorial(a)); // <---- Here the factorial function is called for input value (a)
+  printf("Factorial of %d is %d",a,factorial(a)); 
   return 0;
 }
 
-int factorial(int x)   //  <---- Here  value of (a) is passed to int (x) . This is defined factorial function 
+int factorial(int x)   
 {
   // printf("Calling factorial of (%d)\n",x);
 
@@ -34,7 +32,7 @@ int factorial(int x)   //  <---- Here  value of (a) is passed to int (x) . This 
 
   else
   {
-    int f = x * factorial(x-1);  // <---- Here the factorial function is calling itself for (x-1)
+    int f = x * factorial(x-1);  // factorial function is calling itself for (x-1)
     return f; 
   }
 }
