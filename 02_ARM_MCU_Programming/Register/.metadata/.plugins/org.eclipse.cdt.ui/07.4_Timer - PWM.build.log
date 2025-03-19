@@ -1,0 +1,10 @@
+15:57:44 **** Incremental Build of configuration Debug for project 07.4_Timer - PWM ****
+make -j16 all 
+arm-none-eabi-size  07.4_Timer\ -\ PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1240	      4	   1572	   2816	    b00	07.4_Timer - PWM.elf
+Finished building: default.size.stdout
+ 
+
+15:57:44 Build Finished. 0 errors, 0 warnings. (took 202ms)
+

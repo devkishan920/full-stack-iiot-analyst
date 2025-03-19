@@ -1,0 +1,10 @@
+14:20:59 **** Incremental Build of configuration Debug for project Interrupt_GPIO_LED_Btn - Q1 ****
+make -j16 all 
+arm-none-eabi-size  Interrupt_GPIO_LED_Btn\ -\ Q1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1216	      4	   1572	   2792	    ae8	Interrupt_GPIO_LED_Btn - Q1.elf
+Finished building: default.size.stdout
+ 
+
+14:21:00 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

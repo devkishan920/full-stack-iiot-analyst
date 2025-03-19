@@ -1,0 +1,10 @@
+19:51:41 **** Incremental Build of configuration Debug for project GPIO_7Seg_KeyPad - Q1 ****
+make -j16 all 
+arm-none-eabi-size  GPIO_7Seg_KeyPad\ -\ Q1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1308	      4	   1572	   2884	    b44	GPIO_7Seg_KeyPad - Q1.elf
+Finished building: default.size.stdout
+ 
+
+19:51:42 Build Finished. 0 errors, 0 warnings. (took 463ms)
+

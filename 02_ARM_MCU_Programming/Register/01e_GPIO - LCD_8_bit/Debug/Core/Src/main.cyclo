@@ -1,0 +1,7 @@
+../Core/Src/main.c:23:5:main	1
+../Core/Src/main.c:33:6:LCD_string	2
+../Core/Src/main.c:42:6:LCD_init	1
+../Core/Src/main.c:58:6:PORTS_init	1
+../Core/Src/main.c:70:6:LCD_command	2
+../Core/Src/main.c:84:6:LCD_data	1
+../Core/Src/main.c:97:6:delayMs	3

@@ -1,0 +1,11 @@
+../Core/Src/main.c:3:6:spi1_config	4	static
+../Core/Src/main.c:25:6:gpio_config	4	static
+../Core/Src/main.c:38:6:spi1_enable	4	static
+../Core/Src/main.c:43:6:spi1_disable	4	static
+../Core/Src/main.c:48:6:cs_enable	4	static
+../Core/Src/main.c:53:6:cs_disable	4	static
+../Core/Src/main.c:58:6:spi1_transmit	24	static
+../Core/Src/main.c:79:6:spi1_receive	16	static
+../Core/Src/main.c:91:6:spi2_slave_config	4	static
+../Core/Src/main.c:105:6:spi2_receive	4	static
+../Core/Src/main.c:124:5:main	8	static

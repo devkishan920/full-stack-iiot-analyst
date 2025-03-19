@@ -1,0 +1,10 @@
+17:01:37 **** Incremental Build of configuration Debug for project USART_Interrupt - Q1 ****
+make -j16 all 
+arm-none-eabi-size  USART_Interrupt\ -\ Q1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11336	     12	   1644	  12992	   32c0	USART_Interrupt - Q1.elf
+Finished building: default.size.stdout
+ 
+
+17:01:37 Build Finished. 0 errors, 0 warnings. (took 196ms)
+

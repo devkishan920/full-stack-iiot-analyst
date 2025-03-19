@@ -1,0 +1,10 @@
+17:00:16 **** Incremental Build of configuration Debug for project 08.3.1_ADC - Multi_Channel_Interrupt ****
+make -j16 all 
+arm-none-eabi-size  08.3.1_ADC\ -\ Multi_Channel_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16172	     12	   1820	  18004	   4654	08.3.1_ADC - Multi_Channel_Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+17:00:16 Build Finished. 0 errors, 0 warnings. (took 247ms)
+

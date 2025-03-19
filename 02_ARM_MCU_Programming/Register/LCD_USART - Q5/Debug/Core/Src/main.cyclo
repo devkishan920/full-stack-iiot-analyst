@@ -1,0 +1,10 @@
+../Core/Src/main.c:19:6:usart2_init	1
+../Core/Src/main.c:43:6:delay	2
+../Core/Src/main.c:51:9:usart2_rx	2
+../Core/Src/main.c:62:5:main	4
+../Core/Src/main.c:87:6:LCD_string	2
+../Core/Src/main.c:98:1:LCD_init	1
+../Core/Src/main.c:115:6:PORTS_init	1
+../Core/Src/main.c:125:6:LCD_command	2
+../Core/Src/main.c:139:6:LCD_data	1
+../Core/Src/main.c:153:6:delayMs	3

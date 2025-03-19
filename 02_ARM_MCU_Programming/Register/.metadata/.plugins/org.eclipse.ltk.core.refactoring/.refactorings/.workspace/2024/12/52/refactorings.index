@@ -1,0 +1,8 @@
+1734874412549	Rename resource 'GPIO_7SegKeyPad - Q5'
+1734921019453	Delete resource 'GPIO_7Seg_KeyPad - Q5'
+1735128349354	Rename resource '08.1_USART_Tx'
+1735128368654	Rename resource '08.2_USART_Rx'
+1735128532822	Delete resource '08.1_USART2_Tx'
+1735128720124	Delete resource '08.2_USART2_Rx'
+1735294668533	Rename resource 'USART1 - Q9'
+1735296219476	Delete resource 'LCD_USART - Q5'

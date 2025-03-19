@@ -1,0 +1,10 @@
+11:27:58 **** Incremental Build of configuration Debug for project RFID_RC523_LED ****
+make -j16 all 
+arm-none-eabi-size  RFID_RC523_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8860	    100	   1932	  10892	   2a8c	RFID_RC523_LED.elf
+Finished building: default.size.stdout
+ 
+
+11:27:59 Build Finished. 0 errors, 0 warnings. (took 249ms)
+

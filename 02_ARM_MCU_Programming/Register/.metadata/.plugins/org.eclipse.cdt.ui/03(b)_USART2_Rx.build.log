@@ -1,0 +1,13 @@
+13:52:40 **** Incremental Build of configuration Debug for project 03(b)_USART2_Rx ****
+make -j16 all 
+arm-none-eabi-size  03(b)_USART2_Rx.elf 
+arm-none-eabi-objdump -h -S 03(b)_USART2_Rx.elf  > "03(b)_USART2_Rx.list"
+c:/st/stm32cubeide_1.16.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.1.300.202402091052/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:69: default.size.stdout] Error 2
+make: *** Waiting for unfinished jobs....
+c:/st/stm32cubeide_1.16.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.1.300.202402091052/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:74: 03(b)_USART2_Rx.list] Error 2
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+13:52:40 Build Failed. 3 errors, 0 warnings. (took 198ms)
+

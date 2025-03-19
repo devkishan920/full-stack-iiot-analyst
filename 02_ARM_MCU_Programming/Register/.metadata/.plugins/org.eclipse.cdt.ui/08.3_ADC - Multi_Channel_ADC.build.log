@@ -1,0 +1,10 @@
+15:27:23 **** Incremental Build of configuration Debug for project 08.3_ADC - Multi_Channel_ADC ****
+make -j16 all 
+arm-none-eabi-size  08.3_ADC\ -\ Multi_Channel_ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1220	      4	   1580	   2804	    af4	08.3_ADC - Multi_Channel_ADC.elf
+Finished building: default.size.stdout
+ 
+
+15:27:24 Build Finished. 0 errors, 0 warnings. (took 193ms)
+

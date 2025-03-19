@@ -1,0 +1,10 @@
+17:52:33 **** Incremental Build of configuration Debug for project 01e_GPIO - LCD_8_bit ****
+make -j16 all 
+arm-none-eabi-size  01e_GPIO\ -\ LCD_8_bit.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1356	      4	   1572	   2932	    b74	01e_GPIO - LCD_8_bit.elf
+Finished building: default.size.stdout
+ 
+
+17:52:34 Build Finished. 0 errors, 0 warnings. (took 458ms)
+

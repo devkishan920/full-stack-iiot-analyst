@@ -1,0 +1,10 @@
+08:46:17 **** Build of configuration Debug for project GPIO - 03_KeyPad_Matrix ****
+make -j16 all 
+arm-none-eabi-size  GPIO\ -\ 03_KeyPad_Matrix.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1120	      4	   1572	   2696	    a88	GPIO - 03_KeyPad_Matrix.elf
+Finished building: default.size.stdout
+ 
+
+08:46:18 Build Finished. 0 errors, 0 warnings. (took 464ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;04_Writing_Multiple_FIles/Core/Inc/lcd.h&apos; to &apos;led.h&apos;" description="Rename resource &apos;lcd.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/lcd.h" name="led.h" stamp="1735467387291" updateReferences="true"/>
+</session>

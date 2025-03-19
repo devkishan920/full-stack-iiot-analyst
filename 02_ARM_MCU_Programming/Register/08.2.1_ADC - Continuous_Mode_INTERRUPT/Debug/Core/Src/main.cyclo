@@ -1,0 +1,4 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Core/Src/main.c:6:6:adc1_in1_config	1
+../Core/Src/main.c:44:5:main	1
+../Core/Src/main.c:65:6:ADC_IRQHandler	2

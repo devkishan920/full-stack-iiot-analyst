@@ -1,0 +1,10 @@
+16:10:11 **** Incremental Build of configuration Debug for project USART_Interrupt_GPIO_LCD - Q ****
+make -j16 all 
+arm-none-eabi-size  USART_Interrupt_GPIO_LCD\ -\ Q.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1604	      4	   1572	   3180	    c6c	USART_Interrupt_GPIO_LCD - Q.elf
+Finished building: default.size.stdout
+ 
+
+16:10:11 Build Finished. 0 errors, 0 warnings. (took 199ms)
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;10.0_SPI - Configurations/Core/Src/RFID.c&apos;" deleteContents="false" description="Delete resource &apos;10.0_SPI - Configurations/Core/Src/RFID.c&apos;" element1="/10.0_SPI - Configurations/Core/Src/RFID.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1739694127597"/>&#x0A;<refactoring comment="Rename resource &apos;RFID_RC523&apos; to &apos;RFID_RC523_LED&apos;" description="Rename resource &apos;RFID_RC523&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/RFID_RC523" name="RFID_RC523_LED" stamp="1739772883355" updateReferences="true"/>
+</session>

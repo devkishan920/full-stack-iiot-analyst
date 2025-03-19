@@ -1,0 +1,10 @@
+09:18:40 **** Incremental Build of configuration Debug for project 08.1.1_ADC - One_Shot_Mode_INTERRUPT ****
+make -j16 all 
+arm-none-eabi-size  08.1.1_ADC\ -\ One_Shot_Mode_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      4	   1572	   2732	    aac	08.1.1_ADC - One_Shot_Mode_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+09:18:41 Build Finished. 0 errors, 0 warnings. (took 248ms)
+

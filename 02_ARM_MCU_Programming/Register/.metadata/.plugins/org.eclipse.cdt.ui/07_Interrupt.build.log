@@ -1,0 +1,10 @@
+09:55:22 **** Incremental Build of configuration Debug for project 07_Interrupt ****
+make -j16 all 
+arm-none-eabi-size  07_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1200	      4	   1572	   2776	    ad8	07_Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+09:55:22 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

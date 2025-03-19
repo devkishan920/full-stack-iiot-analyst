@@ -1,0 +1,3 @@
+../Core/Src/spi.c:7:6:SPI_Init	1
+../Core/Src/spi.c:24:8:SPI_Transmit	10
+../Core/Src/spi.c:74:8:SPI_Receive	4

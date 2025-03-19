@@ -1,0 +1,33 @@
+18:50:16 **** Incremental Build of configuration Debug for project 08.1_USART2_Tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:21: warning: the comparison will always evaluate as 'true' for the address of 'ptr' will never be NULL [-Waddress]
+  111 |           while(&ptr!='\0')
+      |                     ^~
+../Core/Src/main.c:100:9: note: 'ptr' declared here
+  100 |   char *ptr = "Hello World";
+      |         ^~~
+../Core/Src/main.c:111:21: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+  111 |           while(&ptr!='\0')
+      |                     ^~
+../Core/Src/main.c:111:17: note: did you mean to dereference the pointer?
+  111 |           while(&ptr!='\0')
+      |                 ^
+../Core/Src/main.c:113:30: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'char **' makes integer from pointer without a cast [-Wint-conversion]
+  113 |                   USART2->DR = &ptr ;
+      |                              ^
+arm-none-eabi-gcc -o "08.1_USART2_Tx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Dev Kishan Prajapat\STM32CubeIDE\workspace_1.16.1\Register\08.1_USART2_Tx\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="08.1_USART2_Tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 08.1_USART2_Tx.elf
+ 
+arm-none-eabi-size  08.1_USART2_Tx.elf 
+arm-none-eabi-objdump -h -S 08.1_USART2_Tx.elf  > "08.1_USART2_Tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1572	   2664	    a68	08.1_USART2_Tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 08.1_USART2_Tx.list
+ 
+
+18:50:17 Build Finished. 0 errors, 3 warnings. (took 1s.295ms)
+

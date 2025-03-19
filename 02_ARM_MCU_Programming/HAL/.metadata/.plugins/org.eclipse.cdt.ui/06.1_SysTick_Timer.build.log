@@ -1,0 +1,10 @@
+10:08:19 **** Incremental Build of configuration Debug for project 06.1_SysTick_Timer ****
+make -j16 all 
+arm-none-eabi-size  06.1_SysTick_Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8708	     12	   1644	  10364	   287c	06.1_SysTick_Timer.elf
+Finished building: default.size.stdout
+ 
+
+10:08:20 Build Finished. 0 errors, 0 warnings. (took 458ms)
+

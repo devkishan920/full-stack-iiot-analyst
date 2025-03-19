@@ -1,0 +1,10 @@
+04:47:18 **** Incremental Build of configuration Debug for project GPIO - Q1 ****
+make -j16 all 
+arm-none-eabi-size  GPIO\ -\ Q1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1148	      4	   1572	   2724	    aa4	GPIO - Q1.elf
+Finished building: default.size.stdout
+ 
+
+04:47:18 Build Finished. 0 errors, 0 warnings. (took 450ms)
+

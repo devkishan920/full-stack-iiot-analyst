@@ -1,0 +1,22 @@
+15:24:04 **** Incremental Build of configuration Debug for project rc522_rfid ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:32:9: warning: implicit declaration of function 'systick_init_ms' [-Wimplicit-function-declaration]
+   32 |         systick_init_ms(16000000);
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/main.c:33:9: warning: implicit declaration of function 'rc522_init' [-Wimplicit-function-declaration]
+   33 |         rc522_init();
+      |         ^~~~~~~~~~
+../Core/Src/main.c:37:37: error: 'rfid_id' undeclared (first use in this function)
+   37 |                 if(rc522_check_card(rfid_id))
+      |                                     ^~~~~~~
+../Core/Src/main.c:37:37: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:42:25: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+   42 |                         delay(1000);
+      |                         ^~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+15:24:05 Build Failed. 2 errors, 3 warnings. (took 808ms)
+

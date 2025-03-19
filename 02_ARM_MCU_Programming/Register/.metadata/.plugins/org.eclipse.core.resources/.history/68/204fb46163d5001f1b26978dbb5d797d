@@ -1,0 +1,52 @@
+// Choose ADC - ADC1
+// Choose Channel (simply the pin on which adc conversion) - Ch1 ; see pin description table [ADC being a Additional Functionality] : PA0
+
+#include "stm32f446xx.h"
+
+uint32_t adc_read;
+
+void adc1_in1_config() // Step 1
+{
+  // Enable clock to Port, selected for ADC
+  RCC->AHB1ENR |= (1<<0); // enable clock to Port A
+
+  // Set ADC pin to Analog Mode (in this case PA0)
+  GPIOA->MODER &= ~(0x3 << 0);
+  GPIOA->MODER |= (0x3 << 0); // set pin to Analog Mode
+
+  // Enable clock to ADC1
+  RCC->APB2ENR |= (1<<8);
+
+  // Turn off ADC1 - via control register 2
+  ADC1->CR2 &= ~(1<<0);
+
+  // ----------------------------------------
+  // set conversion sequence
+  ADC1->SQR3 |= (1<<0);
+
+  // set number of conversions
+  ADC1->SQR1 |= (0x0000); // setting number of conversions to be 1
+  // ----------------------------------------
+
+  // Turn on ADC1 - via control register 2
+  ADC1->CR2 |= (1<<0);
+}
+
+int main()
+{
+
+  while(1)
+    {
+      // Step 2 - Start the ADC conversion
+      ADC1->CR2 |= (1<<30); // using SWSTART bit
+
+      // Step 3 - Wait/Check for Conversion completion - EOC bit (bit 1) in Status register
+      while(!(ADC1->SR & 1<<1))
+	{
+
+	}
+
+      // Step 4 - Read the converted data
+      adc_read = ADC1->DR;
+    }
+}

@@ -1,0 +1,10 @@
+17:00:36 **** Incremental Build of configuration Debug for project ADC - Q5 ****
+make -j16 all 
+arm-none-eabi-size  ADC\ -\ Q5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1384	      4	   1580	   2968	    b98	ADC - Q5.elf
+Finished building: default.size.stdout
+ 
+
+17:00:36 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

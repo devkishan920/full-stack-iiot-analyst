@@ -1,0 +1,10 @@
+16:56:32 **** Incremental Build of configuration Debug for project 09.3_I2C - External_RTC ****
+make -j16 all 
+arm-none-eabi-size  09.3_I2C\ -\ External_RTC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19956	    104	   2096	  22156	   568c	09.3_I2C - External_RTC.elf
+Finished building: default.size.stdout
+ 
+
+16:56:32 Build Finished. 0 errors, 0 warnings. (took 254ms)
+

@@ -1,0 +1,10 @@
+../Core/Src/main.c:19:6:usart2_init	4	static
+../Core/Src/main.c:43:6:delay	16	static
+../Core/Src/main.c:51:9:usart2_rx	4	static
+../Core/Src/main.c:62:5:main	16	static
+../Core/Src/main.c:87:6:LCD_string	24	static
+../Core/Src/main.c:98:1:LCD_init	8	static
+../Core/Src/main.c:115:6:PORTS_init	4	static
+../Core/Src/main.c:125:6:LCD_command	16	static
+../Core/Src/main.c:139:6:LCD_data	16	static
+../Core/Src/main.c:153:6:delayMs	24	static

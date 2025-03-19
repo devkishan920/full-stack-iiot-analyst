@@ -1,0 +1,30 @@
+12:43:50 **** Incremental Build of configuration Debug for project 09.0_I2C - Configuations ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'i2c_write':
+../Core/Src/main.c:153:18: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  153 |     volatile int tmp = I2C1->SR1;
+      |                  ^~~
+../Core/Src/main.c: In function 'lcd_send_cmd':
+../Core/Src/main.c:177:9: warning: implicit declaration of function 'HAL_I2C_Master_Transmit' [-Wimplicit-function-declaration]
+  177 |         HAL_I2C_Master_Transmit (&hi2c1, SLAVE_ADDRESS_LCD,(uint8_t *) data_t, 4, 100);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:177:35: error: 'hi2c1' undeclared (first use in this function)
+  177 |         HAL_I2C_Master_Transmit (&hi2c1, SLAVE_ADDRESS_LCD,(uint8_t *) data_t, 4, 100);
+      |                                   ^~~~~
+../Core/Src/main.c:177:35: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:177:42: error: 'SLAVE_ADDRESS_LCD' undeclared (first use in this function)
+  177 |         HAL_I2C_Master_Transmit (&hi2c1, SLAVE_ADDRESS_LCD,(uint8_t *) data_t, 4, 100);
+      |                                          ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'lcd_send_data':
+../Core/Src/main.c:190:35: error: 'hi2c1' undeclared (first use in this function)
+  190 |         HAL_I2C_Master_Transmit (&hi2c1, SLAVE_ADDRESS_LCD,(uint8_t *) data_t, 4, 100);
+      |                                   ^~~~~
+../Core/Src/main.c:190:42: error: 'SLAVE_ADDRESS_LCD' undeclared (first use in this function)
+  190 |         HAL_I2C_Master_Transmit (&hi2c1, SLAVE_ADDRESS_LCD,(uint8_t *) data_t, 4, 100);
+      |                                          ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+12:43:50 Build Failed. 5 errors, 2 warnings. (took 354ms)
+

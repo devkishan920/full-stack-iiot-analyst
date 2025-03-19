@@ -1,0 +1,10 @@
+11:42:00 **** Incremental Build of configuration Debug for project RFID_RC522 ****
+make -j16 all 
+arm-none-eabi-size  RFID_RC522.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8436	    100	   1932	  10468	   28e4	RFID_RC522.elf
+Finished building: default.size.stdout
+ 
+
+11:42:01 Build Finished. 0 errors, 0 warnings. (took 195ms)
+

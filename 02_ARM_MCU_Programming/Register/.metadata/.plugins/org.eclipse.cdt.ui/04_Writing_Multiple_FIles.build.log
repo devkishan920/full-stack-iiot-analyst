@@ -1,0 +1,10 @@
+15:48:53 **** Incremental Build of configuration Debug for project 04_Writing_Multiple_FIles ****
+make -j16 all 
+arm-none-eabi-size  04_Writing_Multiple_FIles.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1096	      4	   1572	   2672	    a70	04_Writing_Multiple_FIles.elf
+Finished building: default.size.stdout
+ 
+
+15:48:54 Build Finished. 0 errors, 0 warnings. (took 462ms)
+
