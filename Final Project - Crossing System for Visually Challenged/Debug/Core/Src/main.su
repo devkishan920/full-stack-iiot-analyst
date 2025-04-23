@@ -1,0 +1,14 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Core/Src/main.c:9:6:gpio_init	4	static
+../Core/Src/main.c:17:6:tim2_init	4	static
+../Core/Src/main.c:29:6:usart3_init	4	static
+../Core/Src/main.c:47:6:delay_1sec	16	static
+../Core/Src/main.c:54:6:delay	16	static
+../Core/Src/main.c:69:6:cross_button	8	static,ignoring_inline_asm
+../Core/Src/main.c:83:6:SysTick_1s	4	static
+../Core/Src/main.c:100:6:sysTick_delay	16	static
+../Core/Src/main.c:110:6:red	4	static
+../Core/Src/main.c:117:6:yellow	4	static
+../Core/Src/main.c:124:6:green	4	static
+../Core/Src/main.c:132:5:main	8	static
+../Core/Src/main.c:160:6:EXTI15_10_IRQHandler	40	static

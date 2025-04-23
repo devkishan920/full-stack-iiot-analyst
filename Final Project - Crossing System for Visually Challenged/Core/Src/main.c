@@ -2,6 +2,8 @@
 
 // PA5, PA6, PA7 : LEDs
 // TIM2
+// USART3
+
 int a = 0, i = 0, b = 0, remaining = 0;
 
 void gpio_init()
@@ -24,10 +26,29 @@ void tim2_init() // timer2 set for delay
     TIM2->CR1 |= (1 << 0); //  Enable Counter Timer
 }
 
+void usart3_init()
+{
+    RCC->AHB1ENR |= (1 << 1); // Enable clock for GPIOB
+    RCC->APB1ENR |= (1 << 18);
+
+    // Set GPIOB pin 10 (TX) and pin 11 (RX) to Alternate Function mode
+    GPIOB->MODER |= (1 << 21) | (1 << 23);  // Set PB10 & PB11 to AF mode
+    GPIOB->MODER &= ~((1 << 20) | (1 << 22)); // Clear PB10 & PB11 non-AF bits
+
+    // Select AF7 for PB10 and PB11
+    GPIOB->AFR[1] |= (0x7 << 8) | (0x7 << 12);
+
+    USART3->BRR = 0x8B; // Set baud rate
+    USART3->CR1 |= (1 << 13); // Enable USART3
+    USART3->CR1 |= (1 << 3);  // Enable transmitter
+//    USART3->CR1 |= (1 << 2);  // Enable receiver
+}
+
 void delay_1sec(int ms)
 {
     TIM2->CNT = 0;
-    while (TIM2->CNT < ms);
+    while (TIM2->CNT < ms)
+        ;
 }
 
 void delay(int sec)
@@ -141,6 +162,17 @@ void EXTI15_10_IRQHandler()
     if (EXTI->PR & (1 << 13)) // checks whether interrupt occured or not
     {
         EXTI->PR |= (1 << 13); // clearing pending register for bit 13
+    }
+
+    char message[] = "EMERGENCY CROSSING";
+    char *ptr = message;
+    while (*ptr)
+    {
+      while ((USART3->SR) & (1 << 7)) // Wait until transmit buffer is empty
+      {
+        USART3->DR = *ptr; // Send one character at a time
+      }
+      ptr++;
     }
 
     yellow();
